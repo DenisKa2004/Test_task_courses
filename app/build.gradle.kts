@@ -2,6 +2,8 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
+    alias(libs.plugins.ksp)
+    id("com.google.dagger.hilt.android")
 }
 
 android {
@@ -41,6 +43,15 @@ android {
 
 dependencies {
 
+
+    implementation(libs.androidx.foundation.android)
+    implementation(libs.androidx.foundation.android)
+    ksp(libs.android.hilt.compiler)
+    implementation(libs.android.hilt)
+    implementation(libs.android.hilt.navigation)
+    implementation (libs.androidx.navigation)
+    implementation(libs.retrofit.andoid)
+    implementation(libs.retrofit.andoid.converter)
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
