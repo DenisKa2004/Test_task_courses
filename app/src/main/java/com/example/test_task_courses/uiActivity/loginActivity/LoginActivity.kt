@@ -264,7 +264,6 @@ fun GradientButton(
         modifier = Modifier
             .fillMaxWidth()
             .height(40.dp)
-            .padding(horizontal = 4.dp)
             .clip(RoundedCornerShape(30.dp))
             .background(brush = gradient)
             .clickable(onClick = onClick),
@@ -273,7 +272,6 @@ fun GradientButton(
         Row(
             verticalAlignment = Alignment.CenterVertically,
             horizontalArrangement = Arrangement.Center,
-            modifier = Modifier.padding(horizontal = 16.dp)
         ) {
             Icon(
                 painter = painterResource(id = iconResId),

@@ -1,4 +1,4 @@
-package com.example.test_task_courses.uiActivity
+package com.example.test_task_courses.uiActivity.profileActivity
 
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
@@ -10,13 +10,13 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.sp
 
 @Composable
-fun MainScreen() {
+fun ProfileScreen(){
     Box(
         modifier = Modifier.fillMaxSize(),
         contentAlignment = Alignment.Center
     ) {
         Text(
-            text = "Главный экран",
+            text = "Аккаунт",
             fontSize = 24.sp,
             fontWeight = FontWeight.Bold
         )

@@ -4,8 +4,10 @@ import androidx.compose.runtime.Composable
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
-import com.example.test_task_courses.uiActivity.MainScreen
+import com.example.test_task_courses.uiActivity.favouritesActivity.FavouritesScreen
+import com.example.test_task_courses.uiActivity.mainScreen.MainScreen
 import com.example.test_task_courses.uiActivity.loginActivity.LoginScreen
+import com.example.test_task_courses.uiActivity.profileActivity.ProfileScreen
 
 @Composable
 fun NavigationController(navController: NavHostController) {
@@ -21,6 +23,12 @@ fun NavigationController(navController: NavHostController) {
         }
         composable(Screen.Main.route) {
             MainScreen()
+        }
+        composable(Screen.Profile.route) {
+            ProfileScreen()
+        }
+        composable(Screen.Favourite.route) {
+            FavouritesScreen()
         }
     }
 }

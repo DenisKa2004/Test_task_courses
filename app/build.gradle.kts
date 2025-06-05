@@ -43,9 +43,14 @@ android {
 
 dependencies {
 
+    implementation(libs.androidx.room.ktx)
+    implementation(libs.androidx.room.runtime)
+    ksp(libs.androidx.room.compiler)
+    implementation(libs.androidx.room.coroutines)
 
     implementation(libs.androidx.foundation.android)
-    implementation(libs.androidx.foundation.android)
+    implementation(libs.okhttp3)
+
     ksp(libs.android.hilt.compiler)
     implementation(libs.android.hilt)
     implementation(libs.android.hilt.navigation)
