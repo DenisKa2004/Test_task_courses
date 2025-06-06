@@ -12,7 +12,7 @@ android {
 
     defaultConfig {
         applicationId = "com.example.test_task_courses"
-        minSdk = 34
+        minSdk = 33
         targetSdk = 35
         versionCode = 1
         versionName = "1.0"
@@ -51,7 +51,7 @@ dependencies {
 
     implementation(libs.androidx.foundation.android)
     implementation(libs.okhttp3)
-
+    implementation(libs.accompanist.navigation.animation)
     ksp(libs.android.hilt.compiler)
     implementation(libs.android.hilt)
     implementation(libs.android.hilt.navigation)

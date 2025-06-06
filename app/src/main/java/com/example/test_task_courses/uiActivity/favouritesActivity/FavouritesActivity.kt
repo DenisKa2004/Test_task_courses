@@ -103,12 +103,12 @@ fun FavouritesScreen(
                     alwaysShowLabel = false,
                     colors = NavigationBarItemColors(
                         selectedIconColor = Color(0xFF12B956),
-                        unselectedIconColor = Color.White,
+                        unselectedIconColor = Color.Gray,
                         selectedTextColor = Color(0xFF12B956),
-                        unselectedTextColor = Color.White,
-                        selectedIndicatorColor = Color(0xFF12B956),
-                        disabledIconColor = Color.White,
-                        disabledTextColor = Color.White,
+                        unselectedTextColor = Color.Gray,
+                        selectedIndicatorColor = Color(0xFF32333A),
+                        disabledIconColor = Color.Gray,
+                        disabledTextColor = Color.Gray,
                     ),
 
                     )

@@ -133,9 +133,9 @@ fun MainScreen(
                         unselectedIconColor = Color.Gray,
                         selectedTextColor = Color(0xFF12B956),
                         unselectedTextColor = Color.Gray,
-                        selectedIndicatorColor = Color(0xFF12B956),
-                        disabledIconColor = Color.Transparent,
-                        disabledTextColor = Color.Transparent,
+                        selectedIndicatorColor = Color(0xFF32333A),
+                        disabledIconColor = Color.Gray,
+                        disabledTextColor = Color.Gray,
                     ),
 
                     )
@@ -234,7 +234,7 @@ fun MainScreen(
                             Icon(
                                 painter = painterResource(R.drawable.arrow_down_up),
                                 contentDescription = "Сортировка",
-                                tint = if (sortDescending) Color(0xFF12B956) else Color.White
+                                tint = if (sortDescending) Color.White else Color(0xFF12B956)
                             )
                         }
                     }
