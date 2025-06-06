@@ -16,9 +16,9 @@ object RepositoryModule {
     @Provides
     @Singleton
     fun provideCourseRepository(
-        @ApplicationContext context: Context,
+        apiService: CourseApiService,
         courseDao: CourseDao
     ): CourseRepository {
-        return CourseRepositoryImpl(context, courseDao)
+        return CourseRepositoryImpl(apiService, courseDao)
     }
 }

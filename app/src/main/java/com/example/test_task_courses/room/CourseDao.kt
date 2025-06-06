@@ -11,6 +11,9 @@ interface CourseDao {
     @Query("SELECT * FROM courses")
     fun getAllCourses(): Flow<List<CourseEntity>>
 
+    @Query("SELECT * FROM courses")
+    suspend fun getAllCoursesOnce(): List<CourseEntity>
+
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun insertCourses(courses: List<CourseEntity>)
 

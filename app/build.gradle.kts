@@ -47,6 +47,7 @@ dependencies {
     implementation(libs.androidx.room.runtime)
     ksp(libs.androidx.room.compiler)
     implementation(libs.androidx.room.coroutines)
+    implementation(libs.ui.graphics)
 
     implementation(libs.androidx.foundation.android)
     implementation(libs.okhttp3)

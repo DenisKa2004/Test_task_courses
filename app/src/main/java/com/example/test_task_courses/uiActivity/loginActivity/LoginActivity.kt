@@ -107,12 +107,13 @@ fun LoginScreen(
                     .fillMaxWidth()
                     .padding(vertical = 4.dp)
                     .background(Color(0xFF32333A), RoundedCornerShape(30.dp)),
-                colors = TextFieldDefaults.outlinedTextFieldColors(
+                colors = TextFieldDefaults.colors(
                     focusedTextColor = Color.White,
                     unfocusedTextColor = Color.White,
-                    containerColor = Color.Transparent,
-                    focusedBorderColor = Color(0xFF888888),
-                    unfocusedBorderColor = Color.Transparent,
+                    focusedContainerColor = Color.Transparent,
+                    unfocusedContainerColor = Color.Transparent,
+                    focusedIndicatorColor = Color(0xFF888888),
+                    unfocusedIndicatorColor = Color.Transparent,
                     cursorColor = Color(0xFF12B956)
                 ),
                 keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Email)
@@ -129,31 +130,32 @@ fun LoginScreen(
                 singleLine = true,
                 visualTransformation = if (passwordVisible) VisualTransformation.None else PasswordVisualTransformation(),
                 keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Password),
-                trailingIcon = {
-                    IconButton(onClick = { passwordVisible = !passwordVisible }) {
-                        Icon(
-                            imageVector = if (passwordVisible) Icons.Default.Close else Icons.Default.Done,
-                            contentDescription = null,
-                            tint = Color.Gray
-                        )
-                    }
-                },
+//                trailingIcon = {
+//                    IconButton(onClick = { passwordVisible = !passwordVisible }) {
+//                        Icon(
+//                            imageVector = if (passwordVisible) Icons.Default.Close else Icons.Default.Done,
+//                            contentDescription = null,
+//                            tint = Color.Gray
+//                        )
+//                    }
+//                },
                 shape = RoundedCornerShape(30.dp),
                 modifier = Modifier
                     .fillMaxWidth()
                     .padding(vertical = 4.dp)
                     .background(Color(0xFF32333A), RoundedCornerShape(30.dp)),
-                colors = TextFieldDefaults.outlinedTextFieldColors(
+                colors = TextFieldDefaults.colors(
                     focusedTextColor = Color.White,
                     unfocusedTextColor = Color.White,
-                    containerColor = Color.Transparent,
-                    focusedBorderColor = Color(0xFF888888),
-                    unfocusedBorderColor = Color.Transparent,
+                    focusedContainerColor = Color.Transparent,
+                    unfocusedContainerColor = Color.Transparent,
+                   focusedIndicatorColor = Color(0xFF888888),
+                    unfocusedIndicatorColor = Color.Transparent,
                     cursorColor = Color(0xFF12B956)
-                )
+                ),
             )
 
-            Spacer(modifier = Modifier.height(14.dp))
+            Spacer(modifier = Modifier.height(16.dp))
 
             // Login button
             Button(
@@ -276,7 +278,7 @@ fun GradientButton(
             Icon(
                 painter = painterResource(id = iconResId),
                 contentDescription = null,
-                modifier = Modifier.size(70.dp,40.dp),
+                modifier = Modifier.size(35.dp,35.dp),
                 tint = Color.Unspecified
             )
         }

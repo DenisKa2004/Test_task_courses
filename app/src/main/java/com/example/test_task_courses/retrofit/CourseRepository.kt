@@ -7,7 +7,6 @@ import kotlinx.coroutines.flow.Flow
 
 interface CourseRepository {
     val allCourses: Flow<List<CourseEntity>>
-    val favoriteCourses: Flow<List<CourseEntity>>
     suspend fun refreshCourses()
     suspend fun toggleFavorite(courseId: Int, newHasLike: Boolean)
 }

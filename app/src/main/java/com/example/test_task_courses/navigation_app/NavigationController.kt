@@ -22,13 +22,13 @@ fun NavigationController(navController: NavHostController) {
             )
         }
         composable(Screen.Main.route) {
-            MainScreen()
+            MainScreen(navController = navController)
         }
         composable(Screen.Profile.route) {
-            ProfileScreen()
+            ProfileScreen(navController = navController)
         }
         composable(Screen.Favourite.route) {
-            FavouritesScreen()
+            FavouritesScreen(navController = navController)
         }
     }
 }
